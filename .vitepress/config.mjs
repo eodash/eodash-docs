@@ -11,16 +11,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Introduction', link: '/welcome' }
+      { text: 'Welcome', link: '/welcome' }
     ],
 
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: 'Welcome', link: '/welcome' },
           { text: 'Preamble', link: '/preamble' },
+          { text: 'Welcome', link: '/welcome' },
           { text: 'Components', link: '/components' },
+          { text: 'Roadmap', link: '/roadmap' },
+          { text: 'Technology', link: '/technology' },
         ]
       },
       {
@@ -35,8 +37,8 @@ export default defineConfig({
         text: 'Content',
         items: [
           { text: 'Content integration', link: '/content' },
-          { text: 'Data', link: '/data' },
-          { text: 'Stories', link: '/stories' },
+          { text: 'Data configuration', link: '/data' },
+          { text: 'Storytelling', link: '/storytelling' },
         ]
       }
     ],

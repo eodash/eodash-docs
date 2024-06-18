@@ -1,2 +1,4 @@
 .vitepress/dist
 .vitepress/cachenode_modules/
+.vitepress/cache
+node_modules
