@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e,a4 as o}from"./chunks/framework.ttppV29E.js";const u=JSON.parse('{"title":"Catalog backend","description":"","frontmatter":{},"headers":[],"relativePath":"catalog.md","filePath":"catalog.md"}'),n={name:"catalog.md"},r=o("",6),c=[r];function l(s,i,h,d,g,p){return e(),a("div",null,c)}const f=t(n,[["render",l]]);export{u as __pageData,f as default};
