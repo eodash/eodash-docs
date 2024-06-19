@@ -18,6 +18,7 @@ We want to note some roadmap steps that are potentially on the horizon to help s
     - describe how to implement a custom widget (as part of eodash instance template)
 * catalog
     - plugin system
+    - document how to create a custom plugin
     - improvement on performance for very large collections
     - potential switch to another base library
 * storytelling
@@ -32,5 +33,6 @@ We want to note some roadmap steps that are potentially on the horizon to help s
     - initialize process of becoming a OSGeo Community Project
     - create library or helper UI to more easily create flat styles (extended by eox-forms)
     - implement (or wrap) VEGA chart definition rendering component
+    - add example images and animations section to documentation 
 
 

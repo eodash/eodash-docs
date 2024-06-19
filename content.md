@@ -1,10 +1,10 @@
 # Content integration
 
 We see at least three ways for contributing content to an instantiated eodash ecosystem:
-* Earth Observation Data
-* Stories
+* Earth Observation (related) data
+* Stories for the [Storytelling](./storytelling) element
 * Additional static pages
 
-Depending on the used setup an abstraction layer can have been placed on top to provide for example helpful user interfaces, like Content Management Systems (CMS) on top of the configuration and setup options, thus here we will talk about the "raw" git based content management.
+The basic process content submission is expected to be done through configuration and content files via a version control system such as git. Depending on how the eodash ecosystem is integrated into a platform it is possible that abstraction layers, such as custom user interfaces (such as Content Management Systems) or helper tools are build on top to help users of the platform.
 
-More content to follow soon!
+As these can potentially differ quite widely, in the following sections we want to look at the basic concepts to provide an understanding of the process.
