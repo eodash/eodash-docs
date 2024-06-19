@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a4 as o}from"./chunks/framework.ttppV29E.js";const m=JSON.parse('{"title":"Technology","description":"","frontmatter":{},"headers":[],"relativePath":"technology.md","filePath":"technology.md"}'),r={name:"technology.md"},n=o("",5),s=[n];function c(h,i,d,l,p,_){return a(),t("div",null,s)}const f=e(r,[["render",c]]);export{m as __pageData,f as default};

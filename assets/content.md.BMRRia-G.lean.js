@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as n,a4 as o}from"./chunks/framework.ttppV29E.js";const u=JSON.parse('{"title":"Content integration","description":"","frontmatter":{},"headers":[],"relativePath":"content.md","filePath":"content.md"}'),a={name:"content.md"},s=o("",5),i=[s];function r(c,l,d,h,p,_){return n(),e("div",null,i)}const m=t(a,[["render",r]]);export{u as __pageData,m as default};
