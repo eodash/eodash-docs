@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "eodash ecosystem",
-  description: "Central documentation point for all aspects that make up the eodash ecosystem",
+  description: "Publish and integrate earth observation data in a dashboard application through this flexible and customizable ecosystem",
   themeConfig: {
     search: {
       provider: "local"
