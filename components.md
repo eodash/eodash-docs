@@ -1,6 +1,6 @@
 # Components
 
-* [eodash](https://github.com/eodash/eodashg)
+* [eodash](https://eodash.github.io/eodash)
   - library for eodash client instance creation as well as web component release
   - extendable and configurable through widgets
 * [eodash_catalog](https://github.com/eodash/eodash_catalog)
