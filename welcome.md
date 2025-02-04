@@ -5,11 +5,11 @@ Great to see you are interested in learning more about the eodash ecosystem!
 Firstly a quick note: the components do not have a stable release and the documentation is also being worked on, so updates and changes are very much to be expected!
 
 ## Goal
-With this ecosystem we want to provide an easily usable, configurable and extendable toolset to present results and achievements around the earth observation domain online and accessible.
+The eodash ecosystem provides an easily usable, configurable and extendable toolset to present results and achievements around the earth observation domain online and accessible.
 
-We want to establish this ecosystem by collaborating with the different EO communities and understanding their requirements, trying to set it up as a more open community project to foster communication.
+We invite EO communities to collaborate on this project to establish this ecosystem by understanding their requirements, fostering communication and building on common goals.
 
-The core functionality of the toolset should cater to provide a baseline that can be used by each of these communities but still allowing to easily integrate their unique solutions.
+The core functionality defines a baseline intended for use by each community still allowing easy integration of their unique solutions.
 
 The documentation tries to cater two user groups:
   - Service administrators looking into how to setup or integrate the eodash ecosystem into their environments, providing an extended service to other users
