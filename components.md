@@ -14,3 +14,5 @@
   - template repo with example setup for a catalog configuration and deployment as github pages
 * [eodash-docs](https://github.com/eodash/eodash-docs)
   - central location for eodash ecosystem documentation
+* [eodash-schemas](https://github.com/eodash/eodash-schemas)
+  - JSON schemas for eodash catalog configs for purposes of validation - matching [eodash catalog wiki entries](https://github.com/eodash/eodash_catalog/wiki)
