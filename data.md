@@ -1,6 +1,6 @@
 # Data configuration
 
-An eodash instance expects to load its content from a STAC catalog. This catalog can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog). As can be seen in the [catalog wiki](https://github.com/eurodatacube/eodash-catalog/wiki/Resource) there are multiple services supported.
+An eodash instance expects to load its content from a STAC catalog. This catalog can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog). As can be seen in the [catalog wiki](https://github.com/eodash/eodash_catalog/wiki/Resource) there are multiple services supported.
 
 We consider eodash to be a data integrator, so we find a "serverless" approach for data integration to be a great opportunity to not require more complex setups when wanting to share your data, apart from making them reachable online. For this we want to give explanations and examples of how this can be done for raster and vector data.
 Currently we support Cloud Optimized GeoTIFFs (COGs) for raster and GeoJSON or FlatGeoBuf files for vector data.
@@ -137,5 +137,4 @@ Here is a very basic example of grayscale rendering of raster values from 0 to 4
 
 For more possibilities of raster data styling, description of parameters and options, please see dedicated [styling guide](./styling#raster-styling).
 
-
-This covers the basics for "serverless" data integration. Integration of datasets provided through services do not use a style file, each endpoint provides their own configuration options which can be defined in the data definition configuration file. For more information please go to the [resource section](https://github.com/eurodatacube/eodash-catalog/wiki/Resource) of the catalog wiki.
+This covers the basics for "serverless" data integration. Integration of datasets provided through services do not use a style file, each endpoint provides their own configuration options which can be defined in the data definition configuration file. For more information please go to the [resource section](https://github.com/eodash/eodash_catalog/wiki/Resource) of the catalog wiki.
