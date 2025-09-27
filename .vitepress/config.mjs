@@ -38,6 +38,7 @@ export default defineConfig({
         items: [
           { text: 'Content integration', link: '/content' },
           { text: 'Data configuration', link: '/data' },
+          { text: 'Styling', link: '/styling' },
           { text: 'Storytelling', link: '/storytelling' },
         ]
       }
