@@ -3,7 +3,7 @@
 We see at least four ways for contributing content to an instantiated eodash ecosystem:
 * Earth Observation (related) [data](./data), see also [styling](./styling) guide.
 * Stories for the [Storytelling](./storytelling) element
-* Adding processing [processing](./processing) definitions
+<!-- * Adding processing [processing](./processing) definitions -->
 * Additional static pages
 
 The basic process content submission is expected to be done through configuration and content files via a version control system such as git. Depending on how the eodash ecosystem is integrated into a platform it is possible that abstraction layers, such as custom user interfaces (such as Content Management Systems) or helper tools are build on top to help users of the platform.
