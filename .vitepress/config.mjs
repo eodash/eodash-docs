@@ -11,7 +11,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Welcome', link: '/welcome' }
+      { text: 'Is this for you?', link: '/welcome' }
     ],
 
     sidebar: [
