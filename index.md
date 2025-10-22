@@ -21,9 +21,9 @@ hero:
       link: /content
 
 features:
-  - title: For community administrators
+  - title: For developers
     details: Learn how to create an eodash instance for your community providing a customized environment with a user facing dashboard 
-  - title: For community members
+  - title: For data visualization configurators
     details: Learn how to integrate your content (like data and results) into an existing eodash instance 
 ---
 
