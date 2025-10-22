@@ -16,9 +16,8 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Introduction',
+        text: 'Is this for you?',
         items: [
-          { text: 'Preamble', link: '/preamble' },
           { text: 'Welcome', link: '/welcome' },
           { text: 'Components', link: '/components' },
           { text: 'Roadmap', link: '/roadmap' },
@@ -26,7 +25,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Ecosystem setup',
+        text: 'Developers',
         items: [
           { text: 'First steps', link: '/first_steps' },
           { text: 'Catalog backend', link: '/catalog' },
@@ -34,11 +33,13 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Content',
+        text: 'Data visualization configurator',
         items: [
           { text: 'Content integration', link: '/content' },
           { text: 'Data configuration', link: '/data' },
-          { text: 'Styling', link: '/styling' },
+          { text: 'Styling', link: '/styling', items: [
+            { text: 'Examples', link: '/styling#color-maps' },
+            { text: 'Other examples', link: '/styling#layer-styles' },]},
           { text: 'Storytelling', link: '/storytelling' },
         ]
       }

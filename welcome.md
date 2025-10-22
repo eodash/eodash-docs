@@ -33,3 +33,8 @@ The generated static catalog is the input used by an **[eodash](https://eodash.g
 
 For wider audiences the [storytelling](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-storytelling--docs) component is envisioned. It provides an online editor (based on [Markdown](https://www.markdownguide.org/)) to create an interactive and guided experience. Results and datasets shown in eodash instances can be easily integrated. Field experts and communicators are able to create such content by utilizing the capabilities provided by eodash.
 
+# History
+
+Working with Earth Observation data and how to present it for a long time, we have identified many aspects that are shared among multiple projects. One of the key aspects is being able to explore and navigate Earth Observation data through a user interface. The user interface in itself of course very much depends on the capabilities of the components providing the data. There is a balance that needs to be found in the complexity of the user interface and the capabilities that it provides and the expertise of the expected user.
+
+With the eodash ecosystem we want to provide a set of tools that work well together. The idea is to have a federated system based around [SpatioTemporal Asset Catalogs: STAC](https://stacspec.org) that allows the individual setup that is needed by most projects and communities. These components and concepts are developed under a permissive license in the hope of extending the user base for them and growing their capabilities together through either external extensions or plugins, or by contributions or feedback to improve the core tools.
