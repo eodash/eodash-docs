@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "eodash"
   text: "Earth Observation Visualization Ecosystem"
-  tagline: to be reworked!! Publish and integrate EO data in a dashboard application through this flexible and customizable ecosystem
+  tagline: to be reworked!! Publish and integrate EO data in a dashboard application through this flexible and customizable ecosystem. Ideas: EODash is an open-source tool for exploring and visualizing Earth Observation data through interactive dashboards and stories.
   image:
     src: /eodash_logo.png
     alt: eodash logo
