@@ -1,17 +1,23 @@
-// https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import EOX from "@eox/pages-theme-eox";
+import './custom.css';
+import { onMounted, watch, ref } from 'vue';
+import { useRoute } from 'vitepress';
 
-/** @type {import('vitepress').Theme} */
 export default {
-  extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+  ...EOX,
+  setup() {
+    const route = useRoute()
+    
+    const manipulateTargetAttributes = () => {
+      document.querySelectorAll('a[target="_self"]').forEach((link) => {
+        link.removeAttribute('target')
+      });
+    }
+            
+    watch(route, () => {
+      setTimeout(manipulateTargetAttributes, 50)
     })
-  },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+    
+    return {}
   }
 }

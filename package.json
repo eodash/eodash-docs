@@ -1,10 +1,13 @@
 {
+  "name": "eodash-docs",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "start": "vitepress dev"
   },
   "dependencies": {
+    "@eox/pages-theme-eox": "^0.9.4",
     "vitepress": "^1.6.4",
     "vue": "^3.4.27"
   }
