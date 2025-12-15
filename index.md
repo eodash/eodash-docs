@@ -16,6 +16,8 @@ hero:
       link: /welcome
 ---
 
+This project was developed by EOX, with funding and support from the European Space Agency (ESA) in the frame of the Euro Data Cube, RACE, EO Dashboard, and GTIF activities. We are grateful for the financial contributions and ongoing support provided by ESA, NASA, JAXA, and the European Commission, which enabled the development and maturation of this project to its current state.
+
 <FeatureSection
   icon="mdi-application-brackets-outline"
   image="/assets/dynamic_rendering.gif"
@@ -63,6 +65,8 @@ Seamlessly connect to various data sources and APIs, bringing all your earth obs
 >
 Explore advanced capabilities like customizable themes, widget extensions, and embedding your dashboard as a web component.
 </FeatureSection>
+
+<FeaturesGallery/>
 
 <CTASection
   dark

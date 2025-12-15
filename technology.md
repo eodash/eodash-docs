@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Technology
 
 eodash is the framework, state manager and component communicator for core and third party widgets. This frame is based on [vue.js](https://vuejs.org/) (version 3).

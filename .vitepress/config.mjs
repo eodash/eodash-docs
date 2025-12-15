@@ -22,11 +22,11 @@ export default defineConfig({
           { text: 'Web Component', link: '/features/web-component' },
         ]
       },
+      { text: 'Documentation', link: '/technology' },
       { text: 'Components', link: '/components' },
       { text: 'Roadmap', link: '/roadmap' },
       { text: 'Technology', link: '/technology' },
     ],
-    /*
     sidebar: [
       {
         text: 'Introduction',
@@ -67,7 +67,6 @@ export default defineConfig({
         ]
       }
     ],
-    */
     socialLinks: [
       { icon: 'github', link: 'https://github.com/eodash' }
     ],
