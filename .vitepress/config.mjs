@@ -64,6 +64,13 @@ export default defineConfig({
           { text: 'Data configuration', link: '/data' },
           { text: 'Styling', link: '/styling' },
           { text: 'Storytelling', link: '/storytelling' },
+          { 
+            text: 'Processing / API integration',
+            link: '/processing',
+            items: [
+              { text: 'Input definition', link: '/processing_inputs' },
+            ]
+           },
         ]
       }
     ],

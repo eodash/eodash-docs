@@ -20,3 +20,5 @@ jobs:
         with:
           folder: ./.vitepress/dist/
           branch: gh-pages
+          clean-exclude: pr-preview
+          force: false
