@@ -59,7 +59,7 @@ The usual RESTful interfaces allow to send a GET request to retrieve the relevan
 https://greatapi.com/v1/feature/timeseries/austria
 ```
 
-By using templatig language it is possible to utilize the properties that have been defined in the inputs. For example we can use the `feature_id` in the GET request. The definition in the eodash_catalog collection would be:
+By using templating language it is possible to utilize the properties that have been defined in the inputs. For example we can use the `feature_id` in the GET request. The definition in the eodash_catalog collection would be:
 
 ```yaml
 Process:
@@ -92,7 +92,7 @@ The request to the endpoint will then return some data. eodash foresees two type
 * tabular or similar 
 * or georeferenced data
 
-### Tabular data
+### Chart data
 
 For tabular data it is possible to specify a VEGA Chart definition. [Vega](https://vega.github.io/vega/) is a well established Visualization Grammar. Through this a completely custom visualization of the data can be configured for the user.
 
