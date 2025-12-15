@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,a6 as n}from"./chunks/framework.DXYaoUa_.js";const p=JSON.parse('{"title":"Catalog backend","description":"","frontmatter":{},"headers":[],"relativePath":"catalog.md","filePath":"catalog.md"}'),r={name:"catalog.md"};function c(l,a,s,i,h,d){return o(),e("div",null,[...a[0]||(a[0]=[n("",6)])])}const u=t(r,[["render",c]]);export{p as __pageData,u as default};
