@@ -61,11 +61,7 @@ export default {
               enableSearch: false,
               enableBackToPOIs: false,
               enableGlobe: false,
-            },
-            btnsPosition: {
-              x: "12/12/12",
-              y: 1,
-              gap: 32
+              enableZoom: false,
             },
           },
         },
