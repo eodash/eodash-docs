@@ -14,7 +14,7 @@ export default defineConfig({
     nav: [
       { text: 'Welcome', link: '/welcome' },
       { text: 'Features', link: '/features', items: [
-          { text: 'Client-side Rendering', link: '/features/client-side-rendering' },
+          { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=IDEAS2_wildlife' },
           { text: 'Process Definition', link: '/features/process-definition' },
           { text: 'Endpoint Integration', link: '/features/endpoint-integration' },
           { text: 'Customizable Themes', link: '/features/customizable-themes' },
