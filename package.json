@@ -7,8 +7,10 @@
     "start": "vitepress dev"
   },
   "dependencies": {
-    "@eox/pages-theme-eox": "^0.9.4",
+    "@eox/pages-theme-eox": "^1.0.0",
     "vitepress": "^1.6.4",
-    "vue": "^3.4.27"
+    "vue": "^3.4.27",
+    "@eodash/eodash": "^5.5.2",
+    "@eox/storytelling": "^1.10.0"
   }
 }

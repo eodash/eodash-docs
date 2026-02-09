@@ -1,6 +1,18 @@
 ---
 layout: home
 ---
+<script setup>
+  import { withBase } from 'vitepress'
+  import { onBeforeMount, onMounted, } from 'vue';
+  onBeforeMount(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    // sets the indicator selected via URL query params
+    searchParams.set("indicator", "IDEAS2_wildlife");
+    const newRelativePathQuery = window.location.pathname + "?" + searchParams.toString();
+    history.pushState(null, "", newRelativePathQuery);
+  });
+
+</script>
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
@@ -25,3 +37,9 @@ eodash provides powerful support for direct rendering of raster and vector data 
 Key capabilities include:
 - **Dynamic Styling**: Specify styles for your data and update them dynamically based on user input, for example through a form.
 - **High Performance**: Optimized for performance, ensuring smooth rendering and a great user experience even with large datasets.
+
+### Live demo
+
+Try dragging the sliders to show only areas within a certain range of Biodiversity index value and or its auxiliary layers.
+
+<eo-dash style="height:calc(50dvh);display: block" :config="withBase(`/eodash-configs/clientside.js`)"/>
