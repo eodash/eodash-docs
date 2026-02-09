@@ -5,7 +5,7 @@ layout: home
   import { withBase } from 'vitepress'
   const searchParams = new URLSearchParams(window.location.search);
   // sets the indicator selected via URL query params
-  searchParams.set("indicator", "IDEAS2_wildlife");
+  searchParams.set("indicator", "client_side_rendering");
   const newRelativePathQuery = window.location.pathname + "?" + searchParams.toString();
   history.pushState(null, "", newRelativePathQuery);
 </script>
@@ -36,6 +36,8 @@ Key capabilities include:
 
 ### Live demo
 
-Try dragging the sliders to show only areas within a certain range of Biodiversity index value and or its auxiliary layers.
+Try dragging the sliders for **Biodiversity Indicator** to show only areas within a certain value ranges.
 
-<eo-dash style="height:calc(50dvh);display: block" :config="withBase(`/eodash-configs/clientside.js`)"/>
+Or try using the sliders for **Water Turbidity** to control the min/max for used color stretch.
+
+<eo-dash style="height:calc(70dvh);display: block" :config="withBase(`/eodash-configs/clientside.js`)"/>

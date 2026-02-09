@@ -14,8 +14,8 @@ export default defineConfig({
     nav: [
       { text: 'Welcome', link: '/welcome' },
       { text: 'Features', link: '/features', items: [
-          { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=IDEAS2_wildlife' },
-          { text: 'Process Definition', link: '/features/process-definition' },
+          { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=client_side_rendering' },
+          { text: 'Process Definition', link: '/features/process-definition?indicator=N2_CO2_mean' },
           { text: 'Endpoint Integration', link: '/features/endpoint-integration' },
           { text: 'Customizable Themes', link: '/features/customizable-themes' },
           { text: 'Widget Extension', link: '/features/widget-extension' },
