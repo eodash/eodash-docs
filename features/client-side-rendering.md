@@ -3,6 +3,11 @@ layout: home
 ---
 <script setup>
   import { withBase } from 'vitepress'
+  const searchParams = new URLSearchParams(window.location.search);
+  // sets the indicator selected via URL query params
+  searchParams.set("indicator", "IDEAS2_wildlife");
+  const newRelativePathQuery = window.location.pathname + "?" + searchParams.toString();
+  history.pushState(null, "", newRelativePathQuery);
 </script>
 
 <FeatureSection
