@@ -6,6 +6,9 @@ layout: home
   const searchParams = new URLSearchParams(window.location.search);
   // sets the indicator selected via URL query params
   searchParams.set("indicator", "client_side_rendering");
+  searchParams.set("x", "12.0837");
+  searchParams.set("y", "44.8289");
+  searchParams.set("z", "9.5");
   const newRelativePathQuery = window.location.pathname + "?" + searchParams.toString();
   history.pushState(null, "", newRelativePathQuery);
 </script>
