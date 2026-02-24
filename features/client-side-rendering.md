@@ -41,6 +41,6 @@ Key capabilities include:
 
 Try dragging the sliders for **Biodiversity Indicator** to show only areas within a certain value ranges.
 
-Or try using the sliders for **Water Turbidity** to control the min/max for used color stretch.
+Or try using the sliders for **Water Turbidity** to control the min/max for used color stretch. You can also hover on the map over this dataset to see original raster values in a tooltip.
 
 <eo-dash style="height:calc(70dvh);display: block" :config="withBase(`/eodash-configs/clientside.js`)"/>
