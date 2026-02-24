@@ -13,21 +13,6 @@ layout: home
   history.pushState(null, "", newRelativePathQuery);
 </script>
 
-<FeatureSection
-  icon="mdi-application-brackets-outline"
-  image="/img/expert_applications.jpg"
-  primary-button="Launch workspace"
-  primary-link="/launch"
-  secondary-button="Contact Sales"
-  secondary-link="/contact"
-  tagline="Client-side Rendering"
-  title="Client-side Rendering"
->
-Empower your team with a complete suite of applications through one interface for your geospatial professional & community projects, designed for your EO endeavors.
-</FeatureSection>
-
-<a id="applications"></a>
-
 
 ### Client-side Rendering
 
@@ -40,7 +25,9 @@ Key capabilities include:
 ### Live demo
 
 Try dragging the sliders for **Biodiversity Indicator** to show only areas within a certain value ranges.
+For more information about this dataset, please visit the [race.esa.int](https://race.esa.int/explore/?template=expert&indicator=IND2_1).
 
 Or try using the sliders for **Water Turbidity** to control the min/max for used color stretch. You can also hover on the map over this dataset to see original raster values in a tooltip.
+For more information about this dataset, visit the [race.esa.int](https://race.esa.int/explore/?template=expert&indicator=CNR_TUR_1).
 
 <eo-dash style="height:calc(70dvh);display: block" :config="withBase(`/eodash-configs/clientside.js`)"/>
