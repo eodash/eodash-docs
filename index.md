@@ -22,7 +22,7 @@ This project was developed by EOX, with funding and support from the European Sp
 <h4 class="center-align">Trusted By</h4>
 <LogoSection
   :logos="logos"
-  :baseHeight="8"
+  :baseHeight="4"
 />
 
 <FeatureSection
