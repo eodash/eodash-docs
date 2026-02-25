@@ -53,7 +53,7 @@ Define and execute data processing workflows with ease using a structured and po
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  image="/assets/feature-endpoint-integration.svg"
+  image="/assets/endpoint_integration.gif"
   landing
   dark
   primaryButton="Learn more"
