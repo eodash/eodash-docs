@@ -10,7 +10,7 @@
     "@eox/pages-theme-eox": "^1.1.0",
     "vitepress": "^1.6.4",
     "vue": "^3.5.28",
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@845a511",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@c0a9493",
     "@eox/storytelling": "^1.10.1"
   }
 }
