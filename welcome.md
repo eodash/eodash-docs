@@ -1,10 +1,13 @@
 # Welcome
 
-Great to see you are interested in learning more about the eodash ecosystem! 
+Welcome to EO Dash documentation. 
 
-Firstly a quick note: the components do not have a stable release and the documentation is also being worked on, so updates and changes are very much to be expected!
+Note: the components do not have a stable release and the documentation is also being worked on, so updates and changes are to be expected.
 
 ## Goal
+With the eodash ecosystem, we provide a set of tools that work well together. It is a federated system based around SpatioTemporal Asset Catalogs: STAC that allows the individual setup that is needed by most projects and communities. 
+
+These components and concepts are developed under a permissive license in the hope of extending the user base for them and growing their capabilities together through either external extensions or plugins, or by contributions or feedback to improve the core tools.
 The eodash ecosystem provides an easily usable, configurable and extendable toolset to present results and achievements around the earth observation domain online and accessible.
 
 We invite EO communities to collaborate on this project to establish this ecosystem by understanding their requirements, fostering communication and building on common goals.
