@@ -1,0 +1,1 @@
+import{_ as t,c as a,o,ag as s}from"./chunks/framework.C_tke1Yp.js";const g=JSON.parse('{"title":"eodash instance","description":"","frontmatter":{},"headers":[],"relativePath":"eodash.md","filePath":"eodash.md"}'),r={name:"eodash.md"};function n(i,e,h,l,p,d){return o(),a("div",null,[...e[0]||(e[0]=[s("",10)])])}const m=t(r,[["render",n]]);export{g as __pageData,m as default};
