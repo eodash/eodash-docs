@@ -1,7 +1,7 @@
 # Components
 
 * [eodash](https://eodash.github.io/eodash)
-  - library for eodash client instance creation as well as web component release
+  - library for eodash client instance creation and web component release
   - extendable and configurable through widgets
 * [eodash_catalog](https://github.com/eodash/eodash_catalog)
   - library for creation of STAC catalog supported by eodash
