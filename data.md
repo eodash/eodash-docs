@@ -1,8 +1,8 @@
 # Data configuration
 
-An eodash instance expects to load its content from a STAC catalog. This catalog can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog). As can be seen in the [catalog wiki](https://github.com/eodash/eodash_catalog/wiki/Resource) there are multiple services supported.
+An eodash instance loads its content from a STAC catalog. This catalog can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog). As described in the [catalog wiki](https://github.com/eodash/eodash_catalog/wiki/Resource), multiple services are supported.
 
-We consider eodash to be a data integrator, so we find a "serverless" approach for data integration to be a great opportunity to not require more complex setups when wanting to share your data, apart from making them reachable online. For this we want to give explanations and examples of how this can be done for raster and vector data.
+eodash is a data integrator. so we find a "serverless" approach for data integration to be a great opportunity to not require more complex setups when wanting to share your data, apart from making them reachable online. For this we want to give explanations and examples of how this can be done for raster and vector data.
 Currently we support Cloud Optimized GeoTIFFs (COGs) for raster and GeoJSON or FlatGeoBuf files for vector data.
 
 For all three types of files, returned [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) on the server side need to be correctly set up in order to let the eodash in a browser access them directly from a different domain than eodash is usually running on. You can use [following CORS validator](https://cors-test.codehappy.dev/) - (not affiliated with eodash project, use at your own discretion) for your resources to check if the response CORS headers are set up correctly for access from the domain where eodash is/will be hosted.
