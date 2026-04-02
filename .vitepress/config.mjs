@@ -18,7 +18,6 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'Preamble', link: '/preamble' },
           { text: 'Welcome', link: '/welcome' },
           { text: 'Components', link: '/components' },
           { text: 'Roadmap', link: '/roadmap' },
