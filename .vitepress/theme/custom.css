@@ -1,0 +1,65 @@
+/* fix for wrong height position when navigating back to specific section */
+:target {
+    scroll-margin-top: 130px;
+}
+
+/* fix for links in text not differentiable from normal text */
+.VPPage a:not(.button) { color: #2870a8; }
+
+/* fix for logo images being cropped in borders */
+.tiles img{
+    border-radius: 0!important;
+}
+
+.screenshots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    padding: 20px;
+}
+.screenshot {
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    background: white;
+    padding: 10px;
+}
+.screenshot:hover {
+    transform: scale(1.05);
+}
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+.screenshot p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #3a3e41;
+    font-weight: normal;
+}
+.screenshot:hover img {
+    filter: grayscale(0%);
+}
+.screenshot a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+@media (max-width: 900px) {
+    .screenshot {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

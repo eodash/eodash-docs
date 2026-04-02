@@ -1,30 +1,127 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
-  name: "eodash"
-  text: "Earth Observation Ecosystem"
+  name: eodash
+  text: eodash ecosystem
   tagline: Publish and integrate EO data in a dashboard application through this flexible and customizable ecosystem
-  image:
-    src: /eodash_logo.png
-    alt: eodash logo
+  background:
+    src: /assets/hero_background.svg
+    alt: Background
   actions:
     - theme: brand
-      text: Learn more
-      link: /welcome
-    - theme: alt
-      text: Ecosystem setup
+      text: Get Started
       link: /first_steps
     - theme: alt
-      text: Content integration
-      link: /content
-
-features:
-  - title: For community administrators
-    details: Learn how to create an eodash instance for your community providing a customized environment with a user facing dashboard 
-  - title: For community members
-    details: Learn how to integrate your content (like data and results) into an existing eodash instance 
+      text: Learn More
+      link: /welcome
 ---
 
-This project was developed by EOX, with funding and support from the [European Space Agency (ESA)](https://eo4society.esa.int/) in the frame of the [Euro Data Cube](https://eurodatacube.com/), [RACE](https://race.esa.int/), [EO Dashboard](https://eodashboard.org/), and [GTIF](https://gtif.esa.int/) activities. We are grateful for the financial contributions and ongoing support provided by ESA, NASA, JAXA, and the [European Commission](https://ec.europa.eu/info/index_en), which enabled the development and maturation of this project to its current state.
+This project was developed by EOX, with funding and support from the European Space Agency (ESA) in the frame of the Euro Data Cube, RACE, EO Dashboard, and GTIF activities. We are grateful for the financial contributions and ongoing support provided by ESA, NASA, JAXA, and the European Commission, which enabled the development and maturation of this project to its current state.
+
+<div class="large-space"></div>
+<h4 class="center-align">Trusted By</h4>
+<LogoSection
+  :logos="logos"
+  :baseHeight="4"
+/>
+
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/dynamic_rendering.gif"
+  landing
+  dark
+  primaryButton="Learn more"
+  primaryLink="/features/client-side-rendering"
+  tagline="Dynamic data visualization"
+  title="Client-side Rendering"
+>
+Fast, responsive, and interactive dashboards rendered directly in the browser, ensuring a smooth user experience.
+</FeatureSection>
+
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/chart_selection.gif"
+  landing
+  reverse
+  primaryButton="Learn more"
+  primaryLink="/features/process-definition"
+  tagline="Show customized charts to visualize your results"
+  title="Integrate your APIs"
+>
+Define and execute data processing workflows with ease using a structured and powerful configuration.
+</FeatureSection>
+
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/endpoint_integration.gif"
+  landing
+  dark
+  primaryButton="Learn more"
+  primaryLink="/features/endpoint-integration"
+  tagline="Integrate all your data sources"
+  title="Endpoint Integration"
+>
+Seamlessly connect to various data sources and APIs, bringing all your earth observation data into one place.
+</FeatureSection>
+
+<FeatureSection
+  primary-button="See all features"
+  primary-link="/features/customizable-themes"
+  title="And much more..."
+  reverse
+>
+Explore advanced capabilities like customizable themes, widget extensions, and embedding your dashboard as a web component.
+</FeatureSection>
+
+<FeaturesGallery/>
+
+<CTASection
+  dark
+  title="Ready to get started?"
+  tagline="See examples on how to integrate it into your website"
+  primaryButton="Examples"
+  primaryLink="/examples"
+/>
+
+<script setup>
+import { withBase } from "vitepress"
+const logos = [
+  {
+    alt:'RACE', 
+    image: withBase('/logos/race.jpg'),
+    link:'https://race.esa.int',
+    target:'_blank' 
+  },
+  {
+    alt:'EOPF Explorer',
+    image: withBase('/logos/eopf_explorer.svg'),
+    link:'https://explorer.eopf.copernicus.eu' 
+  },
+  {
+    alt:'GTIF Austria', 
+    image: withBase('/logos/gtif_austria.svg'),
+    link:'https://gtif-austria.info' 
+  },
+  {
+    alt:'Baltic GTIF', 
+    image: withBase('/logos/baltic_gtif.png'),
+    link:'https://gtif-baltic.info' 
+  },
+  {
+    alt:'Cerulean IF', 
+    image: withBase('/logos/cerulean.png'),
+    link:'https://cif.eox.at'
+  },
+  {
+    alt:'eodashboard', 
+    image: withBase('/logos/eodashboard.jpg'),
+    link:'https://eodashboard.org' 
+  },
+  {
+    alt:'GTIF UKIF', 
+    image: withBase('/logos/gtif_ukif.svg'),
+    link:'https://gtif-ukif.github.io/gtif-ukif-client/' 
+  }
+  ]
+
+</script>
