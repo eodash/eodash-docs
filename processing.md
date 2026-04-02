@@ -1,26 +1,26 @@
 # Processing / API integration
 
-The eodash ecosystem allows integration of nearly limitless custom endpoints and APIs to further enrich the information that can be provided to the user.
+The eodash ecosystem allows integration of almost any custom endpoint or APIs to enrich the information shown to users.
 
-Typical use cases are fetching time series or statistics for an area that can be either selected from already existing features on the map or allow the user to create a custom geometry that will be passed to the endpoint.
+Typical use case is fetching time series or statistics for a selected area. The area can either be selected from an existing features on the map, or created by a user as a custom geometry.
 
-The three main configuration blocks can be seen in the figure below. They are basically definition of:
+The three main configuration blocks are portrayed in the figure below. They define:
 
-* **Input**: what inputs are required for the call
-* **Process call**: where is the endpoint and how will the inputs be passed
-* **Output**: how should the result be presented to the user 
+* **Input**: what data the user needs to provide
+* **Process call**: where is the endpoint and how inputs are sent
+* **Output**: how the results are shown to the user
 
-This means that in principle the whole definition can be done with two json files and the references in the STAC collection definition.
+This means that whole definition can be done with two json files and the references in the STAC collection definition.
 
 ![processing diagram](./assets/process_definition.jpg)
 
 ## Input
 
-The inputs needed for the endpoint to be queried can be configured through a **eodash:jsonform** definition. A url to this file needs to be included in the root of the STAC collection definition or configured in the eodash_catalog collection definition.
+Inputs are defined using an **eodash:jsonform** definition. The URL to this file needs to be added in the root of the STAC collection definition or configured in the eodash_catalog collection definition.
 
-This in principle allows a broad spectrum of input fields as well as even custom widgets for helping the user select correct values. The component used in eodash to render the form is the [eox-jsonform](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-jsonform--docs) from the EOxElements. Which is in turn based on the [json-editor](https://github.com/json-editor/json-editor) software.
+This setup allows a broad spectrum of input fields, including custom widgets to help users select correct values. eodash uses the [eox-jsonform](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-jsonform--docs) component from EOxElements, which is based on the [json-editor](https://github.com/json-editor/json-editor) software.
 
-A typical json-form configuration file could look like this:
+A typical json-form configuration file:
 
 ```json
 {
@@ -46,20 +46,20 @@ A typical json-form configuration file could look like this:
 }
 ```
 
-This configuration allows the user to click on a feature on the map, and the endpoint will only need the `id` of that feature as a string.
+This example lets the user click on a feature on the map. The endpoint will only need the feature `id` as a string.
 
-The drawtool widget integrations is very customizable, allowing custom point/bbox/area selection and other options, a more in depth explanation and further examples can be found in the [Input definition](/processing_inputs) section.
+The drawtool widget integration is very customizable. It allows custom point, boundnig box, or area selection. More details can be found in the [Input definition](/processing_inputs) section.
 
 ## Process call
 
-Once the inputs have been configured it is possible to define how they should be applied into the request.
-The usual RESTful interfaces allow to send a GET request to retrieve the relevant information. For example this could be a typical endpoint:
+After the inputs have been configured, you can define how they will be applied into the request.
+The RESTful interfaces allow sending GET requests to retrieve the relevant information. Example  endpoint:
 
 ```
 https://greatapi.com/v1/feature/timeseries/austria
 ```
 
-By using templating language it is possible to utilize the properties that have been defined in the inputs. For example we can use the `feature_id` in the GET request. The definition in the eodash_catalog collection would be:
+You can insert input values into the request using templates. For example, using `feature_id` in the GET request. In eodash_catalog:
 
 ```yaml
 Process:
@@ -73,7 +73,7 @@ Process:
           Method: "GET"
 ```
 
-or directly in STAC collection as service link:
+or directly in the STAC collection as service link:
 
 ```json
 {
@@ -87,20 +87,20 @@ or directly in STAC collection as service link:
 
 ## Output
 
-The request to the endpoint will then return some data. eodash foresees two types of outputs:
+The request to the endpoint will return data. In eodash, two output types exist:
 
-* tabular or similar 
-* or georeferenced data
+* tabular, or similar structured data
+* georeferenced data
 
-### Chart data
+### Chart data (tabular output)
 
-For tabular data it is possible to specify a VEGA Chart definition. [Vega](https://vega.github.io/vega/) is a well established Visualization Grammar. Through this a completely custom visualization of the data can be configured for the user.
+For tabular data, it is possible to define a VEGA Chart. [Vega](https://vega.github.io/vega/) is a well established Visualization Grammar that allows fully custom charts.
 
-Here is a screenshot of just a few examples (https://vega.github.io/vega/examples/) showing what is possible with VEGA definitions:
+Examples (https://vega.github.io/vega/examples/) showing what is possible with VEGA definitions:
 
 ![vega examples](./assets/vega_examples.jpg)
 
-An example definition could look like this, it can be tried out directly in the [online editor](https://vega.github.io/editor/) as well:
+An example definition (can be tried out in the [online editor](https://vega.github.io/editor/)):
 
 ```json
 {
@@ -119,7 +119,7 @@ An example definition could look like this, it can be tried out directly in the 
   }
 }
 ```
-The main change that is needed is to remove the **data** content and only leave a name property inside, e.g.:
+The main change needed is to remove the **data** content, and only leave the name property inside:
 ```json
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -133,10 +133,10 @@ The data section will be filled by eodash.
 
 ### Georeferenced data
 
-For georeferenced data such as Cloud optimized **Geotiffs (COGs), GeoJSON or FlatGeobuf** an **eodash:style** definition file can be specified.
-More information on the style definition can be found under [Styling](/styling).
+For georeferenced data, like Cloud optimized **Geotiffs (COGs), GeoJSON or FlatGeobuf**, you can define an **eodash:style**.
+See the [Styling](/styling) section for details.
 
-It is also possible to specify multiple endpoints, for example, one that provides a timeseries and another that provides a GeoJSON with some location data, this can be seen in the following image:
+You can specify multiple endpoints, e.g. one providing timeseries, and another providing GeoJSON with location data. Example:
 
 ![multi endpoints screenshot](./assets/processing_results.jpg)
 
