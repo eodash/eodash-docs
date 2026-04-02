@@ -1,38 +1,38 @@
 # Roadmap
 
-This project tries to bring together experience and capabilities gathered working in Earth Observation related field.
-This will be an iterative process which will also be influenced by potential community interactions.
+This project brings together experience and capabilities from work in the Earth Observation field.
+It will evolve iteratively, shaped by ongoing development and community interactions.
 
-We are grateful for inputs and thoughts in form of issues in respective components.
-If you are unsure where to create an issue feel free to use the [eodash issue board](https://github.com/eodash/eodash/issues).
+We  welcome feedback and inputs through issues in respective components.
+If you are unsure where to create an issue, use the [eodash issue board](https://github.com/eodash/eodash/issues).
 
-We want to note some roadmap steps that are potentially on the horizon to help stimulate discussion.
+To support discussion, here are key roadmap areas and topics.
 
 * eodash
-    - extend support for generic STAC catalogs
-    - create eodash STAC catalog extension
-    - increase number of example (template) repositories for other frameworks
-    - implement support of flat styles for serverless datasets (COG and GeoJSON)
-    - look into supporting cloud optimized vector formats
-    - implement chart rendering of data based on [VEGA chart definition language](https://vega.github.io/vega/)
-    - describe how to implement a custom widget (as part of eodash instance template)
+    - Extend support for generic STAC catalogs
+    - Develop eodash STAC catalog extension
+    - Expand example (template) repositories for other frameworks
+    - Implement support of flat styles for serverless datasets (COG and GeoJSON)
+    - Explore supporting cloud optimized vector formats
+    - Implement chart rendering of data based on [VEGA chart definition language](https://vega.github.io/vega/)
+    - Document how to implement a custom widget (as part of eodash instance template)
 * catalog
-    - plugin system
-    - document how to create a custom plugin
-    - improvement on performance for very large collections
-    - potential switch to another base library
+    - Introduce a plugin system
+    - Document how to create custom plugins
+    - Improve performance for very large collections
+    - Evaluat a potential switch to a different base library
 * storytelling
-    - allow importing map state based on passed STAC item (and state modifiers)
-    - allow importing of chart state based on passed STAC item (and state modifiers)
-    - integrate VEGA chart definition rendering component
-    - improve documentation
+    - Allow importing map state based on passed STAC item (and state modifiers)
+    - Allow importing of chart state based on passed STAC item (and state modifiers)
+    - Integrate VEGA chart definition rendering component
+    - Improve documentation
 * documentation
-    - extend description of usage and examples
-    - add links to open example instances
-* others
-    - initialize process of becoming a OSGeo Community Project
-    - create library or helper UI to more easily create flat styles (extended by eox-forms)
-    - implement (or wrap) VEGA chart definition rendering component
-    - add example images and animations section to documentation 
+    - Expand usage guides and examples
+    - Add links to open example instances
+* other
+    - Initiate the process of becoming an OSGeo Community Project
+    - Create a library or helper UI to simplify creating flat styles (extended by eox-forms)
+    - Implement (or wrap) VEGA chart definition rendering component
+    - Add example images and animations to the documentation 
 
 

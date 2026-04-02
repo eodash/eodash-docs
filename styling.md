@@ -1,10 +1,10 @@
 # Styling
 
-For vector and raster data eodash uses a shared JSON style definition with use of [OpenLayers flat style](https://openlayers.org/en/latest/apidoc/module-ol_style_flat.html) and [JSON Form](https://github.com/jsonform/jsonform/wiki#using-json-schema-to-describe-your-data-model) definition language as extended by the EOxElement [eox-jsonform](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-jsonform--docs) and [eox-layercontrol-legend]()
+For both vector and raster data, eodash uses a shared JSON style definition with use of [OpenLayers flat style](https://openlayers.org/en/latest/apidoc/module-ol_style_flat.html) and [JSON Form](https://github.com/jsonform/jsonform/wiki#using-json-schema-to-describe-your-data-model) definition language as extended by the EOxElement [eox-jsonform](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-jsonform--docs) and [eox-layercontrol-legend]()
 
 ## Vector styling
 
-Basic example of how to style vector data:
+Basic example:
 ```json
 {
     "fill-color": "red",
@@ -17,7 +17,7 @@ Basic example of how to style vector data:
 
 ![vector data rendering example](./assets/vector_styled_1.png)
 
-In order to define interaction options for the user this can be extended with variables, combined with JSON Form definition. To continue the example, let's say, we would like the user to be able to change the stroke-width with a slider, we can extend the style file like this:
+You can add user controls by combining style variables with JSON Form. Example of adjustable stroke width:
 ```json
 {
     "variables": {
@@ -42,30 +42,30 @@ In order to define interaction options for the user this can be extended with va
 }
 ```
 
-The name of variable `strokeWidth` needs to match between `variables` object, variable inside the flatstyle properties `(stroke-width)` and `jsonform.properties`.
+The name of variable `strokeWidth` must match in `variables` object, variable inside the flatstyle properties `(stroke-width)`, and `jsonform.properties`.
 
 ![vector data interaction rendering example](./assets/style_interaction_example.gif)
 
 ### Tips and tricks
 
-Taking these concepts into account, one can extend the style to use also the `get` functionality of flat styles to access feature properties of the geoJSON as well as [encoded expressions](https://openlayers.org/en/latest/apidoc/module-ol_expr_expression.html#~EncodedExpression) truly custom and interactive styles can be created.
+Taking these concepts into account, one can extend the style to use also the `get` functionality of flat styles to access feature properties of the geoJSON and [encoded expressions](https://openlayers.org/en/latest/apidoc/module-ol_expr_expression.html#~EncodedExpression) truly custom and interactive styles can be created.
 
 There are a few interesting tricks for properties, which "somehow do not fit".
 
-If property value is a number, it needs to be converted to a string, which can be done with:
+Convert numbers to strings:
 `to-string` or `concat`:
 
 `"text-value": ["to-string", ["get", "numberproperty"]],`
 
 `"text-value": ["concat", ["get", "numberproperty"], "somestring, e.g. unit of measurement"],`
 
-If there are `null` values in the data, it can happen that the style is not applied to the features at all. A workaround for that is to use `coalesce` which returns the first element that does not resolve to null.
+If a property is null, styling may fail. Use coalesce:
 
 Therefore if the feature property is null it will return "N/A" in this case
 
  `"text-value": ["to-string",["coalesce", ["get", "propertywithsomenullvalues"], "N/A"]],`.
 
-Combining that with accessing nested properties the result looks like:
+Nested properties:
 ```json
 {
    "text-value":[
@@ -117,7 +117,7 @@ Example of color range applied to style Ice charts data according to the `Sea Ic
 
 ### Hidden fields
 
-It is possible to hide certain fields via `"options": {"hidden": true},`to create "composed" fields for reuse later in the styles.
+You can hide fields via `"options": {"hidden": true},`to create "composed" fields to be later reused in the styles.
 
 In this example a tooltip content is created from a hidden field, which is a composite of values from three other selection fields `ship_class`, `type_of_ice` and `type_of_visualization` via a `watch` syntax. Also see `enum_titles` property for human readable labels of fields.
 
@@ -269,11 +269,11 @@ In this example a tooltip content is created from a hidden field, which is a com
 
 ## Raster styling
 
-Here is a more elaborate example which shows the use of `["band", 1]` to access values from two single band COGs, as well as normalizing the data to 0-1 values, and then applying a interpolated 16 value viridis colormap. The vmin and vmax variables are used to do the normalization allowing dynamic color range adaptation in the eodash instance.
+Here is a more complex example which shows the use of `["band", 1]` to access values from two single band COGs, normalizing the data to 0-1 values, and then applying an interpolated 16-value viridis colormap. The vmin and vmax variables are used to perform the normalization allowing dynamic color range adaptation in the eodash instance.
 
-It uses band 2, to filter what data gets rendered, if the case does not apply, it renders the corresponding pixel as transparent.
+Band 2 is used to filter what data gets rendered. If the case does not apply, it renders the corresponding pixel as transparent.
 
-Additionally a dynamic legend is defined using the `domainProperties` referencing the `jsonform` and `style` variables `vmin` and `vmax`. These properties can be named differently for other datasets, but need to end with `min` and `max`. Hex color code (`#ff00ff`) strings can be used as well for both `legend` and `color`.
+Additionally, a dynamic legend is defined by using the `domainProperties` referencing the `jsonform` and `style` variables `vmin` and `vmax`. These properties can be named differently for other datasets, but must end with `min` and `max`. Hex color code (`#ff00ff`) strings can be used, too, for both `legend` and `color`.
 
 ```json
 {
@@ -379,9 +379,9 @@ Here is how that translates to a visualization in the eodash instance (without t
 
 ### Controlling which bands to use via UI
 
-Style `variables` and `jsonform` can be used to let user switch between bands or even data properties.
+Style `variables` and `jsonform` can be used to let user switch between bands or data properties.
 
-For example following style allows to access 6 hourly predictions of Ice drift from Sentinel 1 scenes over the same geographical area/extent and adapt color stretch:
+The following style allows accessing 6 hourly predictions of Ice drift from Sentinel-1 scenes over the same area of interest and adapting color stretch:
 
 ```json
 {

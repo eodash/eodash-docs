@@ -1,11 +1,11 @@
 # Catalog backend
 
-Let's start with the [catalog-template](https://github.com/eodash/catalog-template), navigate there and click on the "Use this template" button on the top right to create a new repository instance controlled by you. Once your instance is created follow the [How-to](https://github.com/eodash/catalog-template?tab=readme-ov-file#how-to) to enable github pages to automatically generate and host your catalog.
+Start with the [catalog-template](https://github.com/eodash/catalog-template) - navigate there and click "Use this template" button in the top right to create your own copy. Once your instance is created, follow the [How-to](https://github.com/eodash/catalog-template?tab=readme-ov-file#how-to) to enable GitHub Pages to automatically generate and host your catalog.
 
-A very basic catalog example with one collection is already setup, so you can make sure your instance is correctly configured by going to `https://<organization>.github.io/<repository>/<catalog_name>/catalog.json`
+A basic catalog example with one collection is set up, so you can check that your instance is configured correctly - `https://<organization>.github.io/<repository>/<catalog_name>/catalog.json`.
 
-To further understand configuration options for data collections have a look at the [data configuration](./data) section. 
+To learn more about how to configure data collections, visit the [data configuration](./data) section. 
 
-The generation of the catalog which the catalog-template utilizes is based on the [eodash_catalog](https://github.com/eodash/eodash_catalog) python package. For further information please have a look at the repository and documentation.
+The catalog generation used in the catalog-template is based on the [eodash_catalog](https://github.com/eodash/eodash_catalog) Python package. For further information, refer to its repository and documentation.
 
-Please have a look at how to setup an eodash instance in the next section [eodash instance](./eodash).
+Next, continues with the [eodash instance](./eodash) section to set up your instance.
