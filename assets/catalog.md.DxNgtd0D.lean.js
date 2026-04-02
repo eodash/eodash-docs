@@ -1,1 +1,0 @@
-import{_ as a,c as e,o,ag as r}from"./chunks/framework.BSxiluPM.js";const p=JSON.parse('{"title":"Catalog backend","description":"","frontmatter":{},"headers":[],"relativePath":"catalog.md","filePath":"catalog.md"}'),n={name:"catalog.md"};function c(l,t,i,s,h,g){return o(),e("div",null,[...t[0]||(t[0]=[r("",6)])])}const u=a(n,[["render",c]]);export{p as __pageData,u as default};
