@@ -12,7 +12,7 @@ export default defineConfig({
       provider: "local"
     },
     nav: [
-      { text: 'Welcome', link: '/welcome' },
+      { text: 'Home', link: '/' },
       { text: 'Features', link: '/features', items: [
           { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=client_side_rendering&x=12.0837&y=44.8289&z=9.5' },
           { text: 'Process Definition', link: '/features/process-definition?indicator=N2_CO2_mean' },
@@ -22,9 +22,7 @@ export default defineConfig({
           { text: 'Web Component', link: '/features/web-component' },
         ]
       },
-      { text: 'Documentation', link: '/technology' },
-      { text: 'Components', link: '/components' },
-      { text: 'Roadmap', link: '/roadmap' },
+      { text: 'Documentation', link: '/welcome' },
       { text: 'Technology', link: '/technology' },
     ],
     sidebar: [
@@ -32,20 +30,7 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'Welcome', link: '/welcome' },
-          { text: 'Components', link: '/components' },
-          { text: 'Roadmap', link: '/roadmap' },
-          { text: 'Technology', link: '/technology' },
-        ]
-      },
-      {
-        text: 'Features',
-        items: [
-          { text: 'Client-side Rendering', link: '/features/client-side-rendering' },
-          { text: 'Process Definition', link: '/features/process-definition' },
-          { text: 'Endpoint Integration', link: '/features/endpoint-integration' },
-          { text: 'Customizable Themes', link: '/features/customizable-themes' },
-          { text: 'Widget Extension', link: '/features/widget-extension' },
-          { text: 'Web Component', link: '/features/web-component' },
+          { text: 'eodash client documentation', link: 'https://eodash.github.io/eodash/' },
         ]
       },
       {
@@ -57,7 +42,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Content',
+        text: 'Content creation',
         items: [
           { text: 'Content integration', link: '/content' },
           { text: 'Data configuration', link: '/data' },

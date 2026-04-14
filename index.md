@@ -66,21 +66,19 @@ Seamlessly connect to various data sources and APIs, bringing all your earth obs
 
 <FeatureSection
   primary-button="See all features"
-  primary-link="/features/customizable-themes"
+  primary-link="/features"
   title="And much more..."
   reverse
 >
 Explore advanced capabilities like customizable themes, widget extensions, and embedding your dashboard as a web component.
 </FeatureSection>
 
-<FeaturesGallery/>
-
 <CTASection
   dark
   title="Ready to get started?"
-  tagline="See examples on how to integrate it into your website"
-  primaryButton="Examples"
-  primaryLink="/examples"
+  tagline="Check Documentation"
+  primaryButton="Documentation"
+  primaryLink="/welcome"
 />
 
 <script setup>
