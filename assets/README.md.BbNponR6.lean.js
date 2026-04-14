@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as t,ag as i}from"./chunks/framework.BSxiluPM.js";const g=JSON.parse('{"title":"eodash-docs","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),n={name:"README.md"};function o(r,e,l,h,d,p){return s(),t("div",null,[...e[0]||(e[0]=[i("",24)])])}const u=a(n,[["render",o]]);export{g as __pageData,u as default};
