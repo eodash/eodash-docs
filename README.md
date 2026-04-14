@@ -40,8 +40,6 @@ npm install
 
 ```bash
 npm run docs:dev
-# or
-npm start
 ```
 
 The documentation will be available at `http://localhost:5173`.
