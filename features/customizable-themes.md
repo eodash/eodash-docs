@@ -1,6 +1,23 @@
-# Customizable Themes
+---
+layout: page
+---
 
-eodash offers a high degree of customization for its look and feel through theme definitions. This allows you to tailor the appearance of your dashboard to match your branding and design preferences.
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/customizable-themes.png"
+  landing
+  dark
+  primaryButton="Learn more"
+  primaryLink="/features/customizable-themes"
+  tagline="Style the appearance of your dashboard via theme configs."
+  title="Customizable Themes"
+>
+Offers a high degree of customization for its look and feel through theme definitions. 
+</FeatureSection>
+
+### Customizable Themes
+
+They allow you to tailor the appearance of your dashboard to match your branding and design preferences.
 
 Key features:
 - **Theme Definitions**: Easily define and switch between themes.

@@ -1,6 +1,20 @@
 ---
-layout: home
+layout: page
 ---
+
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/chart_selection.gif"
+  landing
+  reverse
+  primaryButton="Learn more"
+  primaryLink="/features/process-definition"
+  tagline="Show customized charts to visualize your results"
+  title="Integrate your APIs"
+>
+Define and execute data processing workflows with ease using a structured and powerful configuration.
+</FeatureSection>
+
 <script setup>
   import { withBase } from 'vitepress'
   const searchParams = new URLSearchParams(window.location.search);
@@ -10,7 +24,7 @@ layout: home
   history.pushState(null, "", newRelativePathQuery);
 </script>
 
-# Process Definition
+### Process Definition
 
 With eodash, you can define processes that allow calling a large set of API endpoints. This enables complex workflows and interactions with backend services.
 

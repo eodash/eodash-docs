@@ -1,6 +1,20 @@
 ---
-layout: home
+layout: page
 ---
+
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/dynamic_rendering.gif"
+  landing
+  dark
+  primaryButton="Learn more"
+  primaryLink="/features/client-side-rendering"
+  tagline="Dynamic data visualization"
+  title="Client-side Rendering"
+>
+Fast, responsive, and interactive dashboards rendered directly in the browser, ensuring a smooth user experience.
+</FeatureSection>
+
 <script setup>
   import { withBase } from 'vitepress'
   const searchParams = new URLSearchParams(window.location.search);

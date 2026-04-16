@@ -1,6 +1,19 @@
 ---
-layout: home
+layout: page
 ---
+<FeatureSection
+  icon="mdi-application-brackets-outline"
+  image="/assets/endpoint_integration.gif"
+  landing
+  dark
+  primaryButton="Learn more"
+  primaryLink="/features/endpoint-integration"
+  tagline="Integrate all your data sources"
+  title="Endpoint Integration"
+>
+Seamlessly connect to various data sources and APIs, bringing all your earth observation data into one place.
+</FeatureSection>
+
 <script setup>
   import { withBase } from 'vitepress'
   const searchParams = new URLSearchParams(window.location.search);
@@ -10,9 +23,7 @@ layout: home
   history.pushState(null, "", newRelativePathQuery);
 </script>
 
-# Endpoint Integration
-
-eodash is designed to be highly interoperable, allowing you to integrate a multitude of endpoint types.
+### Endpoint Integration
 
 Supported endpoint types include:
 - **WMS (Web Map Service)**
