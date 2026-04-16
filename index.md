@@ -93,32 +93,38 @@ const logos = [
   {
     alt:'EOPF Explorer',
     image: withBase('/logos/eopf_explorer.svg'),
-    link:'https://explorer.eopf.copernicus.eu' 
+    link:'https://explorer.eopf.copernicus.eu',
+    target: "_blank"
   },
   {
     alt:'GTIF Austria', 
     image: withBase('/logos/gtif_austria.svg'),
-    link:'https://gtif-austria.info' 
+    link:'https://gtif-austria.info',
+    target: "_blank"
   },
   {
     alt:'Baltic GTIF', 
     image: withBase('/logos/baltic_gtif.png'),
-    link:'https://gtif-baltic.info' 
+    link:'https://gtif-baltic.info',
+    target: "_blank"
   },
   {
     alt:'Cerulean IF', 
     image: withBase('/logos/cerulean.png'),
-    link:'https://cif.eox.at'
+    link:'https://cif.eox.at',
+    target: "_blank"
   },
   {
     alt:'eodashboard', 
     image: withBase('/logos/eodashboard.jpg'),
-    link:'https://eodashboard.org' 
+    link:'https://eodashboard.org',
+    target: "_blank"
   },
   {
     alt:'GTIF UKIF', 
     image: withBase('/logos/gtif_ukif.svg'),
-    link:'https://gtif-ukif.github.io/gtif-ukif-client/' 
+    link:'https://gtif-ukif.github.io/gtif-ukif-client/',
+    target: "_blank"
   }
   ]
 
