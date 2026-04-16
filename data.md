@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Data configuration
 
 An eodash instance loads its content from a STAC catalog. This catalog can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog). As described in the [catalog wiki](https://github.com/eodash/eodash_catalog/wiki/Resource), multiple services are supported.

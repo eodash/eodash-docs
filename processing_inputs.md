@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Input definition
 
 This section provides examples giving further explanations and we collect some typical use cases which can help as handy sources to get you started in the definition.

@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Content integration
 
 There are four ways to contribute content to an eodash ecosystem:

@@ -1,27 +1,36 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
+import baseConfig from "@eox/pages-theme-eox/config";
 
-// https://vitepress.dev/reference/site-config
+const brandId = "eodash";
+
 export default defineConfig({
+  extends: baseConfig(brandId),
   title: "eodash ecosystem",
-  description: "Publish and integrate earth observation data in a dashboard application through this flexible and customizable ecosystem",
+  description: "Publishing and integrating earth observation data in a dashboard application through this flexible and customizable ecosystem",
   themeConfig: {
     search: {
       provider: "local"
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Welcome', link: '/welcome' }
+      { text: 'Features', link: '/features', items: [
+          { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=client_side_rendering&x=12.0837&y=44.8289&z=9.5' },
+          { text: 'Process Definition', link: '/features/process-definition?indicator=N2_CO2_mean' },
+          { text: 'Endpoint Integration', link: '/features/endpoint-integration?indicator=endpoint_integration' },
+          { text: 'Customizable Themes', link: '/features/customizable-themes' },
+          { text: 'Widget Extension', link: '/features/widget-extension' },
+          { text: 'Web Component', link: '/features/web-component' },
+        ]
+      },
+      { text: 'Documentation', link: '/welcome' },
+      { text: 'Technology', link: '/technology' },
     ],
-
     sidebar: [
       {
         text: 'Introduction',
         items: [
           { text: 'Welcome', link: '/welcome' },
-          { text: 'Components', link: '/components' },
-          { text: 'Roadmap', link: '/roadmap' },
-          { text: 'Technology', link: '/technology' },
+          { text: 'eodash client documentation', link: 'https://eodash.github.io/eodash/' },
         ]
       },
       {
@@ -33,7 +42,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Content',
+        text: 'Content creation',
         items: [
           { text: 'Content integration', link: '/content' },
           { text: 'Data configuration', link: '/data' },
@@ -49,9 +58,15 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/eodash' }
-    ]
-  }
-})
+    ],
+    theme: {
+      brandConfig: {
+        legal: {
+            termsAndConditions: "https://eox.at/service-terms-and-conditions/",
+        },
+      },
+    },
+  },
+});

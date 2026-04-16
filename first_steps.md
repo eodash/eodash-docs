@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # First steps
 
 The eodash ecosystem is designed to support many types of setups. You can use individual components, integrate specific endpoints or dynamically configured clients based on custom user workspaces.
