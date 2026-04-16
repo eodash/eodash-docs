@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Storytelling
 
 Storytelling is a tool provided by EOxElements. It is a Markdown-based editor and renderer that allows integration of the same widgets as used in eodash.

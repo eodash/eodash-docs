@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # eodash instance
 
 If your catalog endpoint is already set up (see [Catalog backend](./catalog) if not), you can create an eodash instance to point to it.

@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Processing / API integration
 
 The eodash ecosystem allows integration of almost any custom endpoint or APIs to enrich the information shown to users.

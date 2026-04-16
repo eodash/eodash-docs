@@ -1,3 +1,6 @@
+---
+layout: docs
+---
 # Styling
 
 For both vector and raster data, eodash uses a shared JSON style definition with use of [OpenLayers flat style](https://openlayers.org/en/latest/apidoc/module-ol_style_flat.html) and [JSON Form](https://github.com/jsonform/jsonform/wiki#using-json-schema-to-describe-your-data-model) definition language as extended by the EOxElement [eox-jsonform](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-jsonform--docs) and [eox-layercontrol-legend]()
