@@ -76,8 +76,8 @@ Explore advanced capabilities like customizable themes, widget extensions, and e
 <CTASection
   dark
   title="Ready to get started?"
-  tagline="Check Documentation"
-  primaryButton="Documentation"
+  tagline="Discover how to bring your data to life with our tutorials."
+  primaryButton="See Documentation"
   primaryLink="/welcome"
 />
 
