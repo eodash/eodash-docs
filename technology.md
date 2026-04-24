@@ -30,42 +30,14 @@ eodash can be used either as a [web component](https://www.webcomponents.org/int
   - central location for eodash ecosystem documentation
 * [eodash-schemas](https://github.com/eodash/eodash-schemas)
   - JSON schemas for eodash catalog configs for purposes of validation - matching [eodash catalog wiki entries](https://github.com/eodash/eodash_catalog/wiki)
+* [eodash STAC Extension](https://github.com/eodash/eodash-extension)
+* [preview-instance](https://eodash.github.io/preview-instance/) For checking your generated STAC catalog in a minimal eodash preview instance.
 
-# Roadmap TODO shorten
+# Roadmap
 
-This project brings together experience and capabilities from work in the Earth Observation field.
-It will evolve iteratively, shaped by ongoing development and community interactions.
+This project will evolve iteratively, shaped by projects and community needs and interactions.
 
-We  welcome feedback and inputs through issues in respective components.
+We welcome feedback and inputs through issues in respective components.
 If you are unsure where to create an issue, use the [eodash issue board](https://github.com/eodash/eodash/issues).
 
-To support discussion, here are key roadmap areas and topics.
-
-* eodash
-    - Extend support for generic STAC catalogs
-    - Develop eodash STAC catalog extension
-    - Expand example (template) repositories for other frameworks
-    - Implement support of flat styles for serverless datasets (COG and GeoJSON)
-    - Explore supporting cloud optimized vector formats
-    - Implement chart rendering of data based on [VEGA chart definition language](https://vega.github.io/vega/)
-    - Document how to implement a custom widget (as part of eodash instance template)
-* catalog
-    - Introduce a plugin system
-    - Document how to create custom plugins
-    - Improve performance for very large collections
-    - Evaluat a potential switch to a different base library
-* storytelling
-    - Allow importing map state based on passed STAC item (and state modifiers)
-    - Allow importing of chart state based on passed STAC item (and state modifiers)
-    - Integrate VEGA chart definition rendering component
-    - Improve documentation
-* documentation
-    - Expand usage guides and examples
-    - Add links to open example instances
-* other
-    - Initiate the process of becoming an OSGeo Community Project
-    - Create a library or helper UI to simplify creating flat styles (extended by eox-forms)
-    - Implement (or wrap) VEGA chart definition rendering component
-    - Add example images and animations to the documentation 
-
-
+Check [our eodash project roadmap](https://github.com/orgs/eodash/projects/1) to know about what are we planning next.
