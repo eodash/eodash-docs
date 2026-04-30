@@ -18,7 +18,7 @@ Basic example:
 
 ### Changing style UI
 
-![vector data rendering example](./assets/vector_styled_1.png)
+![vector data rendering example](/assets/vector_styled_1.png)
 
 You can add user controls by combining style variables with JSON Form. Example of adjustable stroke width:
 ```json
@@ -47,7 +47,7 @@ You can add user controls by combining style variables with JSON Form. Example o
 
 The name of variable `strokeWidth` must match in `variables` object, variable inside the flatstyle properties `(stroke-width)`, and `jsonform.properties`.
 
-![vector data interaction rendering example](./assets/style_interaction_example.gif)
+![vector data interaction rendering example](/assets/style_interaction_example.gif)
 
 ### Tips and tricks
 
@@ -377,7 +377,7 @@ Additionally, a dynamic legend is defined by using the `domainProperties` refere
 ```
 Here is how that translates to a visualization in the eodash instance (without the legend):
 
-![raster data interaction rendering example](./assets/raster_interaction_example.gif)
+![raster data interaction rendering example](/assets/raster_interaction_example.gif)
 
 
 ### Controlling which bands to use via UI

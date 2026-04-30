@@ -15,7 +15,7 @@ The three main configuration blocks are portrayed in the figure below. They defi
 
 This means that whole definition can be done with two json files and the references in the STAC collection definition.
 
-![processing diagram](./assets/process_definition.jpg)
+![processing diagram](/assets/process_definition.jpg)
 
 ## Input
 
@@ -101,7 +101,7 @@ For tabular data, it is possible to define a VEGA Chart. [Vega](https://vega.git
 
 Examples (https://vega.github.io/vega/examples/) showing what is possible with VEGA definitions:
 
-![vega examples](./assets/vega_examples.jpg)
+![vega examples](/assets/vega_examples.jpg)
 
 An example definition (can be tried out in the [online editor](https://vega.github.io/editor/)):
 
@@ -141,5 +141,5 @@ See the [Styling](/styling) section for details.
 
 You can specify multiple endpoints, e.g. one providing timeseries, and another providing GeoJSON with location data. Example:
 
-![multi endpoints screenshot](./assets/processing_results.jpg)
+![multi endpoints screenshot](/assets/processing_results.jpg)
 

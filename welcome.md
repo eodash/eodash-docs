@@ -29,7 +29,7 @@ The main tools are a web client dashboard library (eodash) and a catalog generat
 
 ## Concept
 
-![architecture concept figure](./assets/eodash_ecosystem.png)
+![architecture concept figure](/assets/eodash_ecosystem.png)
 
 The figure above shows the main components of the eodash ecosystem and how they interact with each other.
 
