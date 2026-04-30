@@ -97,3 +97,10 @@ div.grid.large-line > div > p {
 aside.VPSidebar {
   z-index: calc(var(--vp-z-index-footer ) - 1)!important;
 }
+
+a.vp-external-link-icon > p, a.vp-external-link-icon > span {
+  display: inline;
+}
+.pager-link.next .title {
+  display: inline !important;
+}
