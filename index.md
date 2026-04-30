@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: eodash
-  text: Integrate EO data into Custom Dashboards
+  text: Integrate EO Data into Custom Dashboards
   tagline: Build, integrate, and ship EO dahsboards through a flexible and customizable ecosystem
   background:
     src: /assets/hero.svg
