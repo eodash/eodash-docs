@@ -17,9 +17,9 @@ export default defineConfig({
           { text: 'Client-side Rendering', link: '/features/client-side-rendering?indicator=client_side_rendering&x=12.0837&y=44.8289&z=9.5' },
           { text: 'Process Definition', link: '/features/process-definition?indicator=N2_CO2_mean' },
           { text: 'Endpoint Integration', link: '/features/endpoint-integration?indicator=endpoint_integration' },
-          { text: 'Customizable Themes', link: '/features/customizable-themes' },
           { text: 'Widget Extension', link: '/features/widget-extension' },
           { text: 'Web Component', link: '/features/web-component' },
+          { text: 'Customizable Themes', link: '/features/customizable-themes' },
         ]
       },
       { text: 'Documentation', link: '/welcome' },
