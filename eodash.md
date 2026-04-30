@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: doc
 ---
 # eodash instance
 
@@ -20,3 +20,7 @@ After this change is done, enable GitHub Pages for your repository and point it 
 For your own project, you can find the url in the deployment section of your GitHub repository. It should look like: `https://<organization>.github.io/<repository>`
 
 You can follow the same approach with the other template repository. The [eodash-pages-template](https://github.com/eodash/eodash-pages-template) uses [vitepress](https://vitepress.dev/) as framework, and integrates the eodash web component variant. It also shows how to create static pages, and include the [storytelling](./storytelling) concept within one static deployment.
+
+## Preview instance
+
+If you just want to preview 
