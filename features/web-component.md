@@ -4,7 +4,7 @@ layout: page
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  image="/assets/web-component-vitepress.png"
+  :image='withBase("/assets/web-component-vitepress.png")'
   landing
   dark
   primaryButton="Learn more"

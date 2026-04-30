@@ -27,7 +27,7 @@ This project was developed by EOX, with funding and support from the European Sp
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  image="/assets/dynamic_rendering.gif"
+  :image='withBase("/assets/dynamic_rendering.gif")'
   landing
   dark
   primaryButton="Learn more"
@@ -40,7 +40,7 @@ Fast, responsive, and interactive dashboards rendered directly in the browser, e
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  image="/assets/chart_selection.gif"
+  :image='withBase("/assets/chart_selection.gif")'
   landing
   reverse
   primaryButton="Learn more"
@@ -53,7 +53,7 @@ Define and execute data processing workflows with ease using a structured and po
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  image="/assets/endpoint_integration.gif"
+  :image='withBase("/assets/endpoint_integration.gif")'
   landing
   dark
   primaryButton="Learn more"
