@@ -18,7 +18,7 @@ The style reference for STAC as a possible extension is being discussed [here](h
 
 Following is the catalog structure that can be generated using the [eodash_catalog](https://github.com/eodash/eodash_catalog) tool.
 
-![STAC catalog structure](./assets/data_definition.png)
+![STAC catalog structure](/assets/data_definition.png)
 
 Datasets are referenced as assets within one item (i.e. TimeEntry) and then used in styling.
 
@@ -70,7 +70,7 @@ Basic example of how to style vector data:
 }
 ```
 
-![vector data rendering example](./assets/vector_styled_1.png)
+![vector data rendering example](/assets/vector_styled_1.png)
 
 For more styling options, see the  [styling guide](./styling#vector-styling).
 

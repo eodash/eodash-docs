@@ -4,7 +4,7 @@ layout: page
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  :image='withBase("/assets/chart_selection.gif")'
+  image="/assets/chart_selection.gif"
   landing
   reverse
   primaryButton="Learn more"

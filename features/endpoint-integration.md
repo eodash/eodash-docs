@@ -3,7 +3,7 @@ layout: page
 ---
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  :image='withBase("/assets/endpoint_integration.gif")'
+  image="/assets/endpoint_integration.gif"
   landing
   dark
   primaryButton="Learn more"

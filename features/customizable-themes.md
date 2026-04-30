@@ -4,7 +4,7 @@ layout: page
 
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  :image='withBase("/assets/customizable-themes.png")'
+  image="/assets/customizable-themes.png"
   landing
   dark
   primaryButton="Learn more"

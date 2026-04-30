@@ -6,7 +6,7 @@ layout: doc
 Storytelling is a tool provided by EOxElements. It is a Markdown-based editor and renderer that allows integration of the same widgets as used in eodash.
 The Markdown is extended by allowing special configuration expressions that are evaluated to setup and show the different widgets. The main advantage is that the Markdown file can still be displayed by any common Markdown interpreter, so the stories can still be used across many frameworks.
 
-![storytelling example screenshot](./assets/storytelling_screenshot.png)
+![storytelling example screenshot](/assets/storytelling_screenshot.png)
 
 The goal is to present information to a wider audience in a clear, guided way. eodash supports this by allowing you to export the current dashboard state and easily include it in a story.
 

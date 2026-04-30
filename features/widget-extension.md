@@ -3,7 +3,7 @@ layout: page
 ---
 <FeatureSection
   icon="mdi-application-brackets-outline"
-  :image='withBase("/assets/minesweeper-widget.png")'
+  image="/assets/minesweeper-widget.png"
   landing
   dark
   primaryButton="Learn more"
