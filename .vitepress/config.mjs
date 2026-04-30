@@ -24,6 +24,8 @@ export default defineConfig({
       },
       { text: 'Documentation', link: '/welcome' },
       { text: 'Technology', link: '/technology' },
+      { text: 'Get Started', link: '/first_steps', action: 'primary' },
+      { text: 'Learn More', link: '/welcome', action: 'alt' },
     ],
     sidebar: [
       {
