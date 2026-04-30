@@ -93,3 +93,7 @@ div.grid.large-line > div > p {
   margin-bottom: 0rem;
   margin-block-start: 0rem!important;
 }
+
+aside.VPSidebar {
+  z-index: calc(var(--vp-z-index-footer ) - 1)!important;
+}
