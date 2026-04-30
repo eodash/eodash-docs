@@ -1,8 +1,11 @@
+---
+layout: doc
+---
 # Welcome
 
-Welcome to EO Dash documentation. 
 
-Note: the components do not have a stable release and the documentation is also being worked on, so updates and changes are to be expected.
+Welcome to eodash documentation. 
+
 
 ## Goal
 With the eodash ecosystem, we provide a set of tools that work well together. It is a federated system based around SpatioTemporal Asset Catalogs: STAC that allows the individual setup that is needed by most projects and communities. 
