@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Technology
+## Technology
 
 eodash is the core framework, state manager and component communicator between both core and third-party widgets. It is based on [vue.js](https://vuejs.org/) (version 3).
 
@@ -12,7 +12,7 @@ The state management within eodash is based on [SpatioTemporal Asset Catalogs (S
 
 eodash can be used either as a [web component](https://www.webcomponents.org/introduction) or as a package that can be build based on [vite](https://vitejs.dev/).
 
-# Components
+## Components
 
 * [eodash](https://eodash.github.io/eodash)
   - library for eodash client instance creation and web component release
@@ -33,7 +33,7 @@ eodash can be used either as a [web component](https://www.webcomponents.org/int
 * [eodash STAC Extension](https://github.com/eodash/eodash-extension)
 * [preview-instance](https://eodash.github.io/preview-instance/) For checking your generated STAC catalog in a minimal eodash preview instance.
 
-# Roadmap
+## Roadmap
 
 This project will evolve iteratively, shaped by projects and community needs and interactions.
 
