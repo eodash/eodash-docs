@@ -2,10 +2,10 @@
 layout: home
 hero:
   name: eodash
-  text: eodash ecosystem
-  tagline: Publish and integrate EO data in a dashboard application through this flexible and customizable ecosystem
+  text: Integrate EO data into Custom Dashboards
+  tagline: Build, integrate, and ship EO dahsboards through a flexible and customizable ecosystem
   background:
-    src: /assets/hero_background.svg
+    src: /assets/hero.svg
     alt: Background
   actions:
     - theme: brand

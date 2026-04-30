@@ -107,6 +107,11 @@ a.vp-external-link-icon > p, a.vp-external-link-icon > span {
     margin:0 !important;
 }
 
+/** Center the tabs on the header */
+.nav-desktop .space {
+    flex: 1;
+}
+
 /** Remove gap between CTA section and footer on home page */
 section.cta-section {
     margin-block-end: 0;

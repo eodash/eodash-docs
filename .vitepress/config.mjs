@@ -2,9 +2,15 @@ import { defineConfig } from "vitepress";
 import baseConfig from "@eox/pages-theme-eox/config";
 
 const brandId = "eodash";
+const brandConfig = await baseConfig(brandId);
+// override the logo until we merge to main to have an absolute path
+brandConfig.themeConfig.logo = {
+  light: "/logos/eodash-light.svg",
+  dark: "/logos/eodash-dark.svg",
+};
 
 export default defineConfig({
-  extends: baseConfig(brandId),
+  extends: brandConfig,
   title: "eodash ecosystem",
   description: "Publishing and integrating earth observation data in a dashboard application through this flexible and customizable ecosystem",
   themeConfig: {
