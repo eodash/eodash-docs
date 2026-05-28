@@ -1,0 +1,1 @@
+import{v as t,S as e,G as s,ap as n}from"./framework.Ce4yr_27.js";function i(){const o=s(!1);return t(()=>{window.requestAnimationFrame(()=>{o.value=!0})}),{ssrBootStyles:n(()=>o.value?void 0:{transition:"none !important"}),isBooted:e(o)}}export{i as u};
