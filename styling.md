@@ -276,7 +276,37 @@ Here is a more complex example which shows the use of `["band", 1]` to access va
 
 Band 2 is used to filter what data gets rendered. If the case does not apply, it renders the corresponding pixel as transparent.
 
-Additionally, a dynamic legend is defined by using the `domainProperties` referencing the `jsonform` and `style` variables `vmin` and `vmax`. These properties can be named differently for other datasets, but must end with `min` and `max`. Hex color code (`#ff00ff`) strings can be used, too, for both `legend` and `color`.
+Additionally, a dynamic legend is defined by using the `domainProperties` referencing the `jsonform` and `style` variables `vmin` and `vmax`. For `XYZ`, `WMS` or `WMTS` layers, eodash also supports dynamic colorscale lookup using `rangeProperty` in combination with a `colormapRegistry` passed to the dashboard configuration.
+
+```json
+{
+    "legend": {
+        "title": "Global horizontal irradiation",
+        "rangeProperty": "cbar",
+        "domainProperties": ["vmin", "vmax"]
+    },
+    "jsonform": {
+        "type": "object",
+        "properties": {
+            "cbar": {
+                "type": "string",
+                "enum": ["magma", "viridis", "plasma"],
+                "default": "viridis"
+            },
+            "vminmax": {
+                "type": "object",
+                "properties": {
+                    "vmin": { "type": "number", "format": "range" },
+                    "vmax": { "type": "number", "format": "range" }
+                },
+                "format": "minmax"
+            }
+        }
+    }
+}
+```
+
+Hex color code (`#ff00ff`) strings can be used, too, for both `legend` and `color`.
 
 ```json
 {
