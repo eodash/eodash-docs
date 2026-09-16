@@ -28,9 +28,8 @@ Example configuration for the catalog tool to add a GeoJSON file:
 
 ```json
 {
-  "Name": "example_collection",
+  "Name": "example_collection_1",
   "Title": "Example collection for vector data",
-  "EodashIdentifier": "exmpl1",
   "Description": "This can be **markdown** text",
   "Resources": [
     {
@@ -80,9 +79,8 @@ Example configuration for the catalog tool to add two single band COG files.
 
 ```yaml
 {
-  "Name": "example_collection",
+  "Name": "example_collection_2",
   "Title": "Example collection for raster data",
-  "EodashIdentifier": "exmpl2",
   "Description": "This can be **markdown** text",
   "Resources": [
     {
