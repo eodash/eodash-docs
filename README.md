@@ -56,6 +56,15 @@ npm run docs:preview
 
 ---
 
+### Export Documentation as PDF
+
+```bash
+npm run export-pdf
+```
+
+- The generated PDF will be created in the repository root directory.
+
+
 ## Contributing
 
 We invite the EO community to collaborate! Whether it's reporting bugs, suggesting features, or contributing code, your input helps grow the eodash ecosystem.
