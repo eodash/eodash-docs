@@ -23,4 +23,5 @@ You can follow the same approach with the other template repository. The [eodash
 
 ## Preview instance
 
-If you just want to preview 
+If you just want to preview a generated STAC catalog if it aligns with the eodash expectations, you can check our [open preview instance](https://eodash.github.io/preview-instance/) where you input the root STAC catalog URL.
+

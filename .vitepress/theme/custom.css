@@ -135,3 +135,76 @@ section.cta-section {
     height: 100%;
     object-fit: contain;
 }
+
+/** Print stylesheet for PDF export **/
+@media print {
+  /* Hide navigation, header, footer, sidebars, outlines, cookie banners, feedback */
+  header,
+  footer,
+  nav,
+  aside,
+  .top-nav,
+  .nav-desktop,
+  .nav-mobile,
+  .VPNav,
+  .VPLocalNav,
+  .VPFooter,
+  .VPDocFooter,
+  .VPSidebar,
+  .VPDocAside,
+  .aside,
+  aside.VPSidebar,
+  .pager-link,
+  .VPPrevNext,
+  eox-feedback-button,
+  .cookie-banner,
+  cookie-banner,
+  /* Hide heavy decorative elements and banners */
+  section.cta-section,
+  .hero-section,
+  .news-banner,
+  .logo-section {
+    display: none !important;
+  }
+
+  /* Reset layout min-height, height, padding, margins that cause blank overflow pages */
+  html,
+  body,
+  #app,
+  .Layout,
+  .VPApp,
+  .VPContent,
+  .VPPage,
+  .VPHome,
+  .VPDoc,
+  .VPDoc .container,
+  .VPDoc .content,
+  .content-container,
+  main,
+  .main {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Page margins */
+  @page {
+    size: auto;
+    margin: 15mm;
+  }
+
+  /* Page break rules for clean PDF printing */
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  pre, table, blockquote, img {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
